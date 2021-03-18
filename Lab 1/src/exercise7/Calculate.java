@@ -25,7 +25,7 @@ public class Calculate {
 		System.out.println("   Weight on Earth   |   Weight on Mars     ");
 		System.out.println("------------------------------------------");
 		System.out.println();
-		System.out.println("     " + weight + "       |" + "        " + Math.round(mars.getWeight() * 100.0) / 100.0);
+		System.out.println("     " + weight + "            |" + "        " + Math.round(mars.getWeight() * 100.0) / 100.0);
 		// display the comparison between weight on earth and mars. weight on mars is rounded off 2 decimal place 
 		System.out.println("------------------------------------------");
 		
