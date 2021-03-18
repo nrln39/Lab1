@@ -1,4 +1,6 @@
 package exercise8;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import exercise7.CalculateWeightOnMars;
@@ -6,7 +8,7 @@ import exercise7.CalculateWeightOnMars;
 public class Human {
 	private String name;
 	
-	private String getName(String name)
+	private String getName()
 	{
 		return name;
 	}
@@ -36,32 +38,33 @@ public class Human {
 		do
 		{
 			counter++;
-			System.out.println();
-			System.out.println("===============  Person " + counter + "  ===============");
-			System.out.println();
-			System.out.println("Please enter your name: "); // ask user for name
+			
+			System.out.println("\n===============  Person " + counter + "  ===============");
+			
+			System.out.println("\nPlease enter your name: "); // ask user for name
 			name = print.nextLine();
 			
 			human.setName(name);
 			
-			System.out.println();
 			
-			
-			System.out.println("Please enter your weight: (kg)"); // ask user for weight in kilograms
+		
+			System.out.println("\nPlease enter your weight: (kg)"); // ask user for weight in kilograms
 			weight = print.nextDouble(); // read input on console
 			mars.setWeight(weight); // send value from attr. weight to method setWeight from class CalculateWeightOnMars
 			
-			System.out.println();
-			System.out.println("Enter 1 to enter weight of next person.");
+			
+			System.out.println("\nEnter 1 to enter weight of next person.");
 			choice = print.nextInt();
 			print.nextLine();
+			
+			List<String> ListHuman =new ArrayList<String>();    
+			ListHuman.add(human.getName() + "                " + weight + "                " + mars.getWeight());
 			
 		}while(choice == 1);
 		
 		
 		
-		System.out.println();
-		System.out.println("The list of information of people's weight would be as follows: ");
+		System.out.println("\n\nThe list of information of people's weight would be as follows: ");
 		
 	}
 	
