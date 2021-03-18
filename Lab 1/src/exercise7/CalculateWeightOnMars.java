@@ -17,9 +17,5 @@ public class CalculateWeightOnMars {
 		this.weight = weight * marsWeight;
 	}
 	
-	public static void main(String[] args) {
-		Scanner print = new Scanner(System.in);
-		System.out.println("Please enter your weight: (kg)");
-		
-    }
+	
 }
