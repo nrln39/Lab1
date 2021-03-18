@@ -6,6 +6,7 @@ import java.util.Scanner;
 import exercise7.CalculateWeightOnMars;
 
 public class Human {
+	
 	private String name;
 	
 	private String getName()
@@ -20,6 +21,7 @@ public class Human {
 	
 	
 	public static void main(String[] args) {
+		List<String> ListHuman =new ArrayList<String>(); 
 		
 		String name; // attr. to hold value name
 		double weight; // attr. to hold value weight
@@ -57,14 +59,20 @@ public class Human {
 			choice = print.nextInt();
 			print.nextLine();
 			
-			List<String> ListHuman =new ArrayList<String>();    
-			ListHuman.add(human.getName() + "                " + weight + "                " + mars.getWeight());
+			   
+			ListHuman.add(human.getName() + "                " + weight + "                " + Math.round(mars.getWeight() * 100.0) / 100.0);
 			
 		}while(choice == 1);
 		
 		
 		
 		System.out.println("\n\nThe list of information of people's weight would be as follows: ");
+		
+		
+		for(String person:ListHuman)  
+			  System.out.println(person);  
+		
+		
 		
 	}
 	
