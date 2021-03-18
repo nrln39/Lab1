@@ -27,6 +27,26 @@ public class Human {
 		
 		Scanner print = new Scanner(System.in);
 		// initialize object for package scanner for display purpose
+		
+		int choice = 0;
+		
+		do
+		{
+			
+			System.out.println("Please enter your name: "); // ask user for name
+			
+			System.out.println("Please enter your weight: (kg)"); // ask user for weight in kilograms
+			weight = print.nextDouble(); // read input on console
+			mars.setWeight(weight); // send value from attr. weight to method setWeight from class CalculateWeightOnMars
+			
+			
+			System.out.println("Enter 1 to enter weight of next person.");
+		}while(choice == 1);
+		
+		
+		
+		System.out.println("The list of information of people's weight would be as follows: ");
+		
 	}
 	
 	
