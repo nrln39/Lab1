@@ -5,7 +5,6 @@ package samples.demo;
 public class Location {
 	private String loc;
 	private int locID;
-	private int locPasscode;
 	
 	public String getLocation()
 	{
